@@ -1,9 +1,8 @@
 body {
-    height: 100%;
-    width: 100%
     /*background: red; /* For browsers that do not support gradients */
     background: radial-gradient(closest-corner at 70% 50%, rgb(102, 255, 240), red);
     background-repeat: no-repeat;
+    background-size: auto;
     background-attachment: fixed;
 }
 
