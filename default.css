@@ -1,5 +1,8 @@
 body {
-    background-color: lightblue;
+    height: 150px;
+    width: 150px;
+    background: red; /* For browsers that do not support gradients */
+    background: radial-gradient(closest-corner at 60% 55%, rgb(102, 255, 240), rgb(15, 206, 240));
 }
 
 h1 {
