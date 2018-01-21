@@ -1,10 +1,16 @@
-body {
-    /*background: red; /* For browsers that do not support gradients */
-    background: radial-gradient(closest-corner at 70% 50%, rgb(14, 255, 105), rgb(102, 200, 220));
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: fixed;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+body, html {
+    height: 100%;
+}
 
+.bg {
+    background-image: url("https://s3.amazonaws.com/lwang-website/background.png");
+
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     font-family: 'Roboto Condensed', sans-serif;
 
 }
@@ -12,6 +18,31 @@ body {
 h1 {
     color: rgb(255, 99, 71);
     margin-left: 20px;
+}
+
+div.title {
+
+    /*margin: auto;*/
+    max-width: 400px;
+    position: relative;
+
+    top: 10%;
+    left: 5%;
+
+}
+
+div.title p{
+    white-space: wrap;
+
+    left: width/2;
+}
+
+div.content {
+
+    position: absolute;
+    margin: auto;
+    max-width: 400px;
+    top: 200px;
 }
 
 a:link, a:visited {
