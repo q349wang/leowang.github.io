@@ -19,6 +19,10 @@ body, html {
 
 }
 @media(max-width : 500) {
+    body, html {
+        height: 100%;
+        overflow: auto;
+    }
     .bg {
         background-image: url(https://s3.amazonaws.com/lwang-website/background-mobile.png);
 
