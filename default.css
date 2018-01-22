@@ -17,17 +17,30 @@ body, html {
     font-family: 'Roboto Condensed', sans-serif;
 
 }
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-    background: url(https://s3.amazonaws.com/lwang-website/background-mobile.png) no-repeat center center fixed;
+@media(max-width : 500) {
+    .bg {
+        background: url(https://s3.amazonaws.com/lwang-website/background-mobile.png);
 
-    -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
+        -webkit-background-size: 100%; 
+        -moz-background-size: 100%; 
+        -o-background-size: 100%; 
+        background-size: 100%; 
+        -webkit-background-size: cover; 
+        -moz-background-size: cover; 
+        -o-background-size: cover; 
+        background-size: cover;
+
+        opacity: 0.0;
+
+        height: 100%;
+        width: 100%;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: 'Roboto Condensed', sans-serif;
+
+    }
+
 }
 
 
