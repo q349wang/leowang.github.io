@@ -9,7 +9,7 @@
 
 </head>
 
-<body class = "bg" onload = "fadeIn(document.getElementsByClassName('bg'), 10, 0.0, 1.0)">
+<body class = "bg" onload = "fadeIn(document.getElementsByClassName('bg'), 10, 0.0, 1.0)" unload = "document.getElementsByClassName('bg').style.opacity = 1.0">
 
 
 	<div class = "title" >
@@ -19,7 +19,7 @@
 
 
 		<div class = "content">
-			<button class="link" onclick="website.location.href = 'resume.html'">Resume</button>
+			<button class="link" onclick="fadeOutPage(document.getElementsByClassName('bg'), 10, 1.0, 0.0, 'resume.html')">Resume</button>
 			<button class="link" onclick="fadeOutPage(document.getElementsByClassName('bg'), 10, 1.0, 0.0, 'projects.html')">Projects</button>
 			<button class="link" onclick="fadeOutPage(document.getElementsByClassName('bg'), 10, 1.0, 0.0, 'contact.html')">Contact</button>
 

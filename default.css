@@ -6,15 +6,13 @@ body, html {
 body.bg {
     background-image: url("https://s3.amazonaws.com/lwang-website/background.png");
 
-    overflow: hidden;
+    overflow: auto;
 
     opacity: 0.0;
 
-    height: 100%;
-    width: 100%;
-
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     font-family: 'Roboto Condensed', sans-serif;
 
@@ -32,6 +30,7 @@ body.resumebg {
 
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     font-family: 'Roboto Condensed', sans-serif;
 
@@ -40,7 +39,7 @@ body.resumebg {
     body.bg {
         background-image: url(https://s3.amazonaws.com/lwang-website/background-mobile.png);
 
-        overflow: hidden;
+        overflow: auto;
 
         -webkit-background-size: 100%; 
         -moz-background-size: 100%; 
@@ -53,10 +52,8 @@ body.resumebg {
 
         opacity: 0.0;
 
-        height: 100%;
-        width: 100%;
-
         background-repeat: no-repeat;
+        background-attachment: fixed;
         background-position: center;
         font-family: 'Roboto Condensed', sans-serif;
 
@@ -78,10 +75,8 @@ body.resumebg {
 
         opacity: 0.0;
 
-        height: 100%;
-        width: 100%;
-
         background-repeat: no-repeat;
+        background-attachment: fixed;
         background-position: center;
         font-family: 'Roboto Condensed', sans-serif;
 
