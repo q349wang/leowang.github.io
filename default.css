@@ -13,15 +13,21 @@ body, html {
 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     font-family: 'Roboto Condensed', sans-serif;
 
 }
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(200, 200, 200);
     margin-right: 20px;
     font-size: 50px;
+}
+
+p {
+    color: rgb(200, 200, 200);
+    margin-right: 20px;
+    font-size: 18px;
 }
 
 div.title {
@@ -45,7 +51,7 @@ div.content {
     position: absolute;
     margin: auto;
     max-width: 400px;
-    top: 200px;
+    top: 120%;
 }
 
 button.link {
@@ -64,6 +70,8 @@ button.link {
 
     background-color: rgb(70, 170, 140);
     color: white;
+
+    margin-bottom: 20%;
 
     -webkit-transition: background-color 1.5s; /*Safari*/
     transition: background-color 1.5s;
