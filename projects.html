@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="lwang.me" target="_self">
-    <link rel="stylesheet" type="text/css" href="default.css">
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base href="lwang.me" target="_self">
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<script src="scripts.js"></script>
 </head>
-<body class = "bg">
+<body class = "bg" onload = "fadeIn(document.getElementsByClassName('bg'), 10, 0.0, 1.0)">
 
-<a href="https://github.com/q349wang">GitHub</a>
+	<button class="link" onclick="fadeOutPage(document.getElementsByClassName('bg'), 5, 1.0, 0.0, 'https://github.com/q349wang')">GitHub</button>
 
 </body>
 </html>
