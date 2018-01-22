@@ -1,11 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 body, html {
     height: 100%;
+    
+}
+body.bg {
+    background-image: url("https://s3.amazonaws.com/lwang-website/background.png");
+
     overflow: hidden;
+
+    opacity: 0.0;
+
+    height: 100%;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 
-.bg {
+body.resumebg {
     background-image: url("https://s3.amazonaws.com/lwang-website/background.png");
+
+    overflow: visible;
 
     opacity: 0.0;
 
@@ -19,21 +37,44 @@ body, html {
 
 }
 @media(max-width : 500) {
-    body, html {
-        height: 100%;
-        overflow: auto;
-    }
-    .bg {
+    body.bg {
         background-image: url(https://s3.amazonaws.com/lwang-website/background-mobile.png);
+
+        overflow: hidden;
 
         -webkit-background-size: 100%; 
         -moz-background-size: 100%; 
         -o-background-size: 100%; 
         background-size: 100%; 
-        -webkit-background-size: cover; 
-        -moz-background-size: cover; 
-        -o-background-size: cover; 
-        background-size: cover;
+        -webkit-background-size: cover cover; 
+        -moz-background-size: cover cover; 
+        -o-background-size: cover cover; 
+        background-size: cover cover;
+
+        opacity: 0.0;
+
+        height: 100%;
+        width: 100%;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: 'Roboto Condensed', sans-serif;
+
+    }
+
+    body.resumebg {
+        background-image: url(https://s3.amazonaws.com/lwang-website/background-mobile.png);
+
+        overflow: visible;
+
+        -webkit-background-size: 100%; 
+        -moz-background-size: 100%; 
+        -o-background-size: 100%; 
+        background-size: 100%; 
+        -webkit-background-size: cover cover; 
+        -moz-background-size: cover cover; 
+        -o-background-size: cover cover; 
+        background-size: cover cover;
 
         opacity: 0.0;
 
@@ -63,7 +104,6 @@ p {
 
 div.title {
 
-    /*margin: auto;*/
     max-width: 400px;
     position: relative;
 
@@ -84,6 +124,14 @@ div.content {
     max-width: 400px;
     top: 120%;
 }
+
+div.resume {
+    position: absolute;
+    margin: auto;
+    right: -50%;
+    top: 30%;
+}
+
 
 button.link {
 
@@ -112,3 +160,15 @@ button.link {
 button.link:hover {
     background-color: rgb(100, 200, 225);
 }
+
+button.image {
+
+    display: block;
+
+    border: none;
+    text-decoration: none;
+
+    background-color: transparent;
+
+}
+
