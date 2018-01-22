@@ -13,13 +13,13 @@ body, html {
 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     font-family: 'Roboto Condensed', sans-serif;
 
 }
 @media(max-width : 500) {
     .bg {
-        background: url(https://s3.amazonaws.com/lwang-website/background-mobile.png);
+        background-image: url(https://s3.amazonaws.com/lwang-website/background-mobile.png);
 
         -webkit-background-size: 100%; 
         -moz-background-size: 100%; 
