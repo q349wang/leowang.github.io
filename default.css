@@ -19,7 +19,7 @@ body.bg {
 }
 @media only screen and (max-width: 768px)  {
     body.bg {
-        background-image: url(https://s3.amazonaws.com/cusec2018-lwang/outgoing/squirrelized_hike.jpg);
+        background-image: url("https://s3.amazonaws.com/lwang-website/background-mobile.png");
 
         overflow: auto;
 
