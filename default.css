@@ -17,52 +17,11 @@ body.bg {
     font-family: 'Roboto Condensed', sans-serif;
 
 }
-
-body.resumebg {
-    background-image: url("https://s3.amazonaws.com/lwang-website/background.png");
-
-    overflow: visible;
-
-    opacity: 0.0;
-
-    height: 100%;
-    width: 100%;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: 'Roboto Condensed', sans-serif;
-
-}
 @media(max-width : 500) {
     body.bg {
-        background-image: url(https://s3.amazonaws.com/lwang-website/background-mobile.png);
+        background-image: url(https://s3.amazonaws.com/cusec2018-lwang/outgoing/squirrelized_hike.jpg);
 
         overflow: auto;
-
-        -webkit-background-size: 100%; 
-        -moz-background-size: 100%; 
-        -o-background-size: 100%; 
-        background-size: 100%; 
-        -webkit-background-size: cover cover; 
-        -moz-background-size: cover cover; 
-        -o-background-size: cover cover; 
-        background-size: cover cover;
-
-        opacity: 0.0;
-
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        font-family: 'Roboto Condensed', sans-serif;
-
-    }
-
-    body.resumebg {
-        background-image: url(https://s3.amazonaws.com/lwang-website/background-mobile.png);
-
-        overflow: visible;
 
         -webkit-background-size: 100%; 
         -moz-background-size: 100%; 
