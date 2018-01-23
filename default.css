@@ -68,6 +68,8 @@ div.title {
 
 div.title p{
     white-space: wrap;
+    word-wrap: break-word;
+    max-width: 400px;
     font-size: 20px;
 }
 
@@ -94,14 +96,20 @@ button.link {
     border: none;
     text-decoration: none;
 
+    border-style: solid;
+    border-width: 5px;
     border-radius: 10px;
+    border-color: rgb(70, 170, 140);
+
     padding: 40px 55px;
 
     text-align: center;
 
     font-size: 30px;
 
-    background-color: rgb(70, 170, 140);
+
+
+    background-color: transparent;
     color: white;
 
     margin-bottom: 20%;
@@ -112,7 +120,7 @@ button.link {
 }
 
 button.link:hover {
-    background-color: rgb(100, 200, 225);
+    background-color: rgb(70, 170, 140);
 }
 
 button.image {
