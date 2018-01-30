@@ -1,11 +1,11 @@
-function fade(elem, speed, target) { /*Fades  an page given speed in ms, to a target opac using jQuery*/
+function fade(elem, speed, target) { /*Fades  an page given speed in ms, to a target opac using Velocity.js*/
 
-	$(elem).animate({
+	$(elem).velocity({
 		opacity: target
 	}, speed);
 }
 /* Depreciated
-function fadeOut(elem, speed, opac, target) { Fades out an array of elements at given speed in ms, from a starting opac to target using jQuery
+function fadeOut(elem, speed, opac, target) { Fades out an array of elements at given speed in ms, from a starting opac to target
 
 	var id = setInterval(frame, speed);
 
@@ -21,9 +21,9 @@ function fadeOut(elem, speed, opac, target) { Fades out an array of elements at 
 	}
 }*/
 
-function fadeOutPage(elem, speed, target, next) { /*Fades  an page given speed in ms, to a target opac and goes to the next page using jQuery*/
+function fadeOutPage(elem, speed, target, next) { /*Fades  an page given speed in ms, to a target opac and goes to the next page using Velocity.js*/
 
-	$(elem).animate({
+	$(elem).velocity({
 		opacity: target
 	}, speed, 
 	function() {window.location.href=next;});
@@ -31,8 +31,8 @@ function fadeOutPage(elem, speed, target, next) { /*Fades  an page given speed i
 }
 
 
-function translateTop(elem, speed, x, opac) { /*Moves an array of elements (top space) at given speed in ms, a given x percent using jQuery*/
-	$(elem).animate({
+function translateTop(elem, speed, x, opac) { /*Moves an array of elements (top space) at given speed in ms, a given x percent using Velocity.js*/
+	$(elem).velocity({
 		top: "+=" + x + "%",
 		opacity: opac
 	}, speed);
