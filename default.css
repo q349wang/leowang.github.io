@@ -79,8 +79,12 @@ div.content {
 
 div.resume {
     position: absolute;
-    margin: auto;
-    right: -50%;
+
+    display: flex;
+    justify-content: center;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+
     top: 30%;
 }
 
@@ -102,8 +106,6 @@ button.link {
     text-align: center;
 
     font-size: 30px;
-
-
 
     background-color: transparent;
     color: white;

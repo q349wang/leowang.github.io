@@ -31,8 +31,9 @@ function fadeOutPage(elem, speed, target, next) { /*Fades  an page given speed i
 }
 
 
-function translateTop(elem, speed, x) { /*Moves an array of elements (top space) at given speed in ms, a given x percent using jQuery*/
+function translateTop(elem, speed, x, opac) { /*Moves an array of elements (top space) at given speed in ms, a given x percent using jQuery*/
 	$(elem).animate({
-		top: "+=" + x + "%"
+		top: "+=" + x + "%",
+		opacity: opac
 	}, speed);
 }
