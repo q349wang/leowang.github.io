@@ -6,13 +6,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<base href="lwang.me" target="_self">
 	<link rel="stylesheet" type="text/css" href="default.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="scripts.js"></script>
 </head>
-<body class = "bg" onload = "fadeIn(document.getElementsByClassName('bg'), 10, 0.0, 1.0); translateTop(document.getElementsByClassName('resume'), 100, 10.0)" unload = "document.getElementsByClassName('bg')[0].style.opacity = 1.0">
+<body class = "bg" unload = "document.getElementsByClassName('bg')[0].style.opacity = 1.0">
+
+	<script type="text/javascript">
+		fade('.bg', 1000, 1.0);
+	</script>
 
 	<div class = "resume">
-		<img src="https://s3.amazonaws.com/lwang-website/resume-preview.png" width = 50%, height = 50% alt = "Resume"  onclick="fadeOutPage(document.getElementsByClassName('bg'), 5, 1.0, 0.0, ' https://s3.amazonaws.com/lwang-website/resume.pdf')">
+		<img src="https://s3.amazonaws.com/lwang-website/resume-preview.png" width = 50%, height = 50% alt = "Resume"  onclick="fadeOutPage('.bg', 1000, 0.0, ' https://s3.amazonaws.com/lwang-website/resume.pdf')">
 	</div>
+
+	<script type="text/javascript"> //Nifty translate animation for resume image
+		translateTop('.resume', 1000, -20.0);
+	</script>
 
 </body>
 </html>

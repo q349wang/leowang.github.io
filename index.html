@@ -5,23 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<base href="lwang.me" target="_self">
 	<link rel="stylesheet" type="text/css" href="default.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="scripts.js"></script>
 
 </head>
 
-<body class = "bg" onload = "fadeIn(document.getElementsByClassName('bg'), 10, 0.0, 1.0)" unload = "document.getElementsByClassName('bg')[0].style.opacity = 1.0">
+<body class = "bg" unload = "document.getElementsByClassName('bg')[0].style.opacity = 1.0">
 
+	<script type="text/javascript">
+		fade('.bg', 1000, 1.0)
+	</script>
 
 	<div class = "title" >
 
 		<h1>Qiuhan (Leo) Wang</h1>
-		<p>Hi! I'm currently a student at the University of Waterloo studying for a <span style="color:rgb(70, 170, 140)">Bachelors of Software Engineering</span>. In my free time I enjoy skiing, cycling, biking and of course programming. You can find some of my projects below along with my resume and contact information. Thanks for visiting my website! :)</p>
+		<p>Hi! I'm currently a student at the University of Waterloo studying for a <span style="color:rgb(70, 200, 140)">Bachelors of Software Engineering</span>. In my free time I enjoy skiing, cycling, biking and of course programming. You can find some of my projects below along with my resume and contact information. Thanks for visiting my website! :)</p>
 
 
 		<div class = "content">
-			<button class="link" onclick="fadeOutPage(document.getElementsByClassName('bg'), 10, 1.0, 0.0, 'resume.html')">Resume</button>
-			<button class="link" onclick="fadeOutPage(document.getElementsByClassName('bg'), 10, 1.0, 0.0, 'projects.html')">Projects</button>
-			<button class="link" onclick="fadeOutPage(document.getElementsByClassName('bg'), 10, 1.0, 0.0, 'contact.html')">Contact</button>
+			<button class="link" onclick="fadeOutPage('.bg', 1000, 0.0, 'resume.html')">Resume</button>
+			<button class="link" onclick="fadeOutPage('.bg', 1000, 0.0, 'projects.html')">Projects</button>
+			<button class="link" onclick="fadeOutPage('.bg', 1000, 0.0, 'contact.html')">Contact</button>
 
 		</div>
 
