@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+body, html {
+    height: 100%;
+    
+}
+body.bg {
+    background-image: url("https://s3.amazonaws.com/lwang-website/background.png");
+
+    overflow: auto;
+
+    opacity: 0.0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+@media only screen and (max-width: 768px)  {
+    body.bg {
+        background-image: url("https://s3.amazonaws.com/lwang-website/background-mobile.png");
+
+        overflow: auto;
+ 
+        -webkit-background-size: cover; 
+        -moz-background-size: cover; 
+        -o-background-size: cover; 
+        background-size: cover;
+
+        opacity: 0.0;
+
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        font-family: 'Roboto Condensed', sans-serif;
+
+    }
+
+}
+
+
+h1 {
+    color: rgb(220, 220, 220);
+    margin-right: 20px;
+    font-size: 50px;
+}
+
+p {
+    color: rgb(200, 200, 200);
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+div.title {
+
+    max-width:500px;
+    position: relative;
+
+    top: 10%;
+    left: 7%;
+
+}
+
+div.title p{
+    white-space: wrap;
+    word-wrap: break-word;
+    max-width: 500px;
+    font-size: 20px;
+}
+
+div.content {
+
+    position: absolute;
+    margin: auto;
+    max-width: 400px;
+    top: 120%;
+}
+
+div.resume {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+
+    top: 30%;
+}
+
+
+button.link {
+
+    display: block;
+
+    border: none;
+    text-decoration: none;
+
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: rgb(70, 170, 140);
+
+    padding: 40px 55px;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    background-color: transparent;
+    color: white;
+
+    margin-bottom: 20%;
+
+    -webkit-transition: background-color 1.5s; /*Safari*/
+    transition: background-color 1.5s;
+
+}
+
+button.link:hover {
+    background-color: rgb(70, 170, 140);
+}
+
+button.image {
+
+    display: block;
+
+    border: none;
+    text-decoration: none;
+
+    background-color: transparent;
+
+}
+
