@@ -4,6 +4,7 @@ function fade(elem, speed, target) { /*Fades  an page given speed in ms, to a ta
 		opacity: target
 	}, speed);
 }
+
 /* Depreciated
 function fadeOut(elem, speed, opac, target) { Fades out an array of elements at given speed in ms, from a starting opac to target
 
