@@ -38,3 +38,12 @@ function translateTop(elem, speed, x, opac) { /*Moves an array of elements (top 
 		opacity: opac
 	}, speed);
 }
+
+function getQuote() {
+	var url = "http://www.whateverorigin.org/get?url=" + encodeURIComponent("https://www.brainyquote.com/topics/lobster") + "&callback=?";
+	console.log(url);
+	$.getJSON('http://allorigins.me/get?url=' + encodeURIComponent('https://www.brainyquote.com/topics/lobster') + '&callback=?', function(data){
+    alert(data.contents);
+});
+
+}
