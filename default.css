@@ -22,17 +22,20 @@ body.bg {
         background-image: url("https://s3.amazonaws.com/lwang-website/background-mobile.png");
 
         overflow: auto;
- 
-        -webkit-background-size: cover; 
-        -moz-background-size: cover; 
-        -o-background-size: cover; 
-        background-size: cover;
 
         opacity: 0.0;
 
         background-repeat: no-repeat;
         background-attachment: fixed;
+
+        -webkit-background-position: center;
         background-position: center;
+
+        
+        -webkit-background-size: cover; 
+        -moz-background-size: cover; 
+        -o-background-size: cover; 
+        background-size: cover;
         font-family: 'Roboto Condensed', sans-serif;
 
     }
