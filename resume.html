@@ -7,18 +7,26 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https://fonts.gstatic.com/ https://fonts.googleapis.com/ https://ajax.googleapis.com/ajax/libs/ https://cdn.jsdelivr.net/npm/ https://s3.amazonaws.com/lwang-website/; font-src 'self' https://fonts.gstatic.com/ data: fonts.gstatic.com">
 	<base href="lwang.me" target="_self">
 	<link rel="stylesheet" type="text/css" href="default.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5/velocity.min.js"></script>
 	<script src="scripts/scripts.js"></script>
 </head>
 <body class = "bg" style="opacity: 1.0" unload = "document.getElementsByClassName('bg')[0].style.opacity = 1.0">
+
+	<div class = "loader">
+		
+	</div>
 
 	<div class = "resume" style="opacity: 0.0">
 		<img src="https://s3.amazonaws.com/lwang-website/resume-preview.png" width = 75%, height = 75% alt = "Resume" align="middle" onclick="fadeOutPage('.bg', 1000, 0.0, ' https://s3.amazonaws.com/lwang-website/resume.pdf')">
 	</div>
 
 	<script type="text/javascript"> //Nifty animation for resume image
-		translateTop('.resume', 1000, -20.0, 1.0);
+	jQuery(window).load(function(){
+            jQuery('.loader').fadeOut(2000,fade('.resume', 1000, 1.0, translateTop('.resume', 3000, -20.0, 1.0)));
+            
+          });
+		
 	</script>
 
 </body>

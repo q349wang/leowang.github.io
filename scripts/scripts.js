@@ -1,8 +1,10 @@
-function fade(elem, speed, target) { /*Fades  an page given speed in ms, to a target opac using Velocity.js*/
+function fade(elem, speed, target, callback) { /*Fades  an page given speed in ms, to a target opac using Velocity.js*/
 
 	$(elem).velocity({
 		opacity: target
 	}, speed);
+
+	typeof callback === 'function' && callback();
 }
 
 /* Depreciated

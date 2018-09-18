@@ -5,17 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<base href="lwang.me" target="_self">
 	<link rel="stylesheet" type="text/css" href="default.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5/velocity.min.js"></script>
 	<script src="scripts/scripts.js"></script>
 
 </head>
 
-<body class = "bg" unload = "document.getElementsByClassName('bg')[0].style.opacity = 1.0">
+<body class = "bg" unload = "document.getElementsByClassName('title')[0].style.opacity = 1.0">
 
-	<script type="text/javascript">
-		fade('.bg', 1000, 1.0);
-	</script>
+	<div class = "loader">
+
+	</div>
 
 	<div class = "title" >
 
@@ -24,14 +24,21 @@
 
 
 		<div class = "content">
-			<button class="link" onclick="fadeOutPage('.bg', 1000, 0.0, 'resume.html')">Resume</button>
-			<button class="link" onclick="fadeOutPage('.bg', 1000, 0.0, 'projects.html')">Projects</button>
-			<button class="link" onclick="fadeOutPage('.bg', 1000, 0.0, 'contact.html')">Contact</button>
+			<button class="link" onclick="fadeOutPage('.bg', 500, 0.0, 'resume.html')">Resume</button>
+			<button class="link" onclick="fadeOutPage('.bg', 500, 0.0, 'projects.html')">Projects</button>
+			<button class="link" onclick="fadeOutPage('.bg', 500, 0.0, 'contact.html')">Contact</button>
 			<!--<button class="link" onclick="getQuote()">Click Me</button>-->
 
 		</div>
 
 	</div>
+
+	<script type="text/javascript"> 
+          jQuery(window).load(function(){
+            jQuery('.loader').fadeOut(500, fade('.title', 1000, 1.0));
+            
+          });
+     </script>
 
 </body>
 

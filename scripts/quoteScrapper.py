@@ -16,3 +16,4 @@ for quote, author in zip(quotes, authors):
     print(quote.get_text())
     print(author.get_text())
     print()
+

@@ -4,41 +4,16 @@ body, html {
     
 }
 body.bg {
-    background-image: url("https://s3.amazonaws.com/lwang-website/background.png");
-
+    background: linear-gradient(to right, #000099 0%, #00cc99 100%);
     overflow: auto;
 
-    opacity: 0.0;
+    opacity: 1.0;
 
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Roboto Condensed', sans-serif;
-
-}
-@media only screen and (max-width: 768px)  {
-    body.bg {
-        background-image: url("https://s3.amazonaws.com/lwang-website/background-mobile.png");
-
-        overflow: auto;
-
-        opacity: 0.0;
-
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
-        -webkit-background-position: center;
-        background-position: center;
-
-        
-        -webkit-background-size: cover; 
-        -moz-background-size: cover; 
-        -o-background-size: cover; 
-        background-size: cover;
-        font-family: 'Roboto Condensed', sans-serif;
-
-    }
 
 }
 
@@ -83,6 +58,7 @@ div.content {
 div.resume {
     position: absolute;
 
+    opacity: 0;
     display: flex;
     justify-content: center;
     -webkit-display: flex;
@@ -91,6 +67,17 @@ div.resume {
     top: 30%;
 }
 
+div.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    min-width: 100%;
+    min-height: 100%;
+    background: linear-gradient(to right, #000099 0%, #00cc99 100%);
+}
 
 button.link {
 
@@ -135,3 +122,26 @@ button.image {
 
 }
 
+@media only screen and (max-width: 768px)  {
+    body.bg {
+        
+        overflow: auto;
+
+        opacity: 0.0;
+
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        -webkit-background-position: center;
+        background-position: center;
+
+        
+        -webkit-background-size: cover; 
+        -moz-background-size: cover; 
+        -o-background-size: cover; 
+        background-size: cover;
+        font-family: 'Roboto Condensed', sans-serif;
+
+    }
+
+}
