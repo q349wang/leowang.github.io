@@ -17,13 +17,13 @@
 		
 	</div>
 
-	<div class = "resume" style="opacity: 0.0">
+	<div class = "resume" style="opacity: 1.0">
 		<img src="https://s3.amazonaws.com/lwang-website/resume-preview.png" width = 75%, height = 75% alt = "Resume" align="middle" onclick="fadeOutPage('.bg', 1000, 0.0, ' https://s3.amazonaws.com/lwang-website/resume.pdf')">
 	</div>
 
 	<script type="text/javascript"> //Nifty animation for resume image
 	jQuery(window).load(function(){
-            jQuery('.loader').fadeOut(2000,fade('.resume', 1000, 1.0, translateTop('.resume', 3000, -20.0, 1.0)));
+            jQuery('.loader').fadeOut(1000, translateTop('.resume', 2000, -20.0, 1.0));
             
           });
 		

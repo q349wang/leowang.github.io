@@ -11,7 +11,7 @@
 
 </head>
 
-<body class = "bg" unload = "document.getElementsByClassName('title')[0].style.opacity = 1.0">
+<body class = "bg" style="opacity: 1.0" unload = "document.getElementsByClassName('title')[0].style.opacity = 1.0">
 
 	<div class = "loader">
 
@@ -35,7 +35,7 @@
 
 	<script type="text/javascript"> 
           jQuery(window).load(function(){
-            jQuery('.loader').fadeOut(500, fade('.title', 1000, 1.0));
+            jQuery('.loader').fadeOut(500);
             
           });
      </script>
