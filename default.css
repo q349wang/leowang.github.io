@@ -91,7 +91,7 @@ button.link {
     border-radius: 10px;
     border-color: rgb(70, 170, 140);
 
-    padding: 40px 55px;
+    padding: 20px 55px;
 
     text-align: center;
 
@@ -128,7 +128,7 @@ button.image {
         overflow: auto;
 
         opacity: 0.0;
-
+        
         background-repeat: no-repeat;
         background-attachment: fixed;
 
